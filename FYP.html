@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Continual Learning</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main_generic.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<div class="inner">
+
+				<!-- Logo -->
+				<a href="index.html" class="logo">
+					<span class="symbol"><img src="images/home.jpg" alt="" /></span><span class="title">home</span>
+				</a>
+
+				<!-- Nav -->
+				<!-- <nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav> -->
+
+			</div>
+		</header>
+
+		<!-- Menu -->
+		<nav id="menu">
+			<h2>Menu</h2>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<!-- <li><a href="generic.html">Ipsum veroeros</a></li>
+							<li><a href="generic.html">Tempus etiam</a></li>
+							<li><a href="generic.html">Consequat dolor</a></li> -->
+				<!-- <li><a href="elements.html">Elements</a></li> -->
+			</ul>
+		</nav>
+
+		<!-- Main -->
+		<div id="main">
+			<div class="inner">
+				<h1>SELF ORGANIZING TASK REPRESENTATION FOR CONTINUAL LEARNING</h1>
+				<!-- <span class="image lef\"><img src="images/FYP_architecture.png" alt="" /></span> -->
+				<p>Humans and animals can continually acquire, fine-tune, and transfer knowledge and
+					skills throughout their lifespan. This ability, referred to as lifelong learning, is mediated by a
+					rich set of neurocognitive mechanisms that together contribute to the development and specialization
+					of our sensorimotor skills as well as to long-term memory
+					consolidation and retrieval. Consequently, lifelong learning capabilities are crucial
+					for computational systems and autonomous agents interacting in the real world and
+					processing continuous streams of information.</p>
+				<p>Machine learning approaches generally learn from a stream of data randomly sampled
+					from a stationery data distribution. Continual learning is a paradigm where the data
+					distribution and learning objective change through time. A Continual learning system can be defined
+					as an adaptive algorithm capable
+					of learning from a continuous stream of information, with such information becoming progressively
+					available over time and where the number of tasks to be learned
+					(e.g. membership classes in a classification task) are not predefined. Continual learning intend to
+					mitigate a phenomenon called <span style="font-weight:bold">Catastrophic forgetting</span>. To
+					understand this consider a situation where a neural network pre-trained on some data needs to be
+					trained again with some newly encountered data. If the previously
+					trained model is re-trained with the newly encountered data, the previously learned
+					knowledge will be overwritten, which is called catastrophic forgetting. With the traditional
+					(offline) deep learning algorithms, overcoming this will consume more time and
+					computational power. Hence, in the CL scenario, a learning model is required to incrementally build
+					and dynamically update internal representations as the distribution of tasks dynamically
+					changes across its lifetime.</p>
+
+				<!-- <span class="image main"><img src="images/FYP_architecture.png" alt="" /></span> -->
+				<!-- <img src="images/FYP_architecture.png" style="width:70%" style="vertical-align:middle"> -->
+
+				<p>
+					Our research involved in making use of the existing methodlogies to create a hybrid approch, which
+					emphasises a streight forward take away in the continual learning research field. We took image
+					classifictaion problem for this work. Continual learning methodologies address some key concepts to
+					build the work on. The important ones are classes and tasks. A class carry the traditional meaning
+					in a classification problem. A task can be defined as a set of classes which are given at once.
+					Thus, a continal learning problem will have several tasks given incrementally. We used CoRE50
+					dataset for experiments, which is specifically designed to benchmark continual learning approaches.
+					The method we came
+					with was able to outperform some major works done previously, but not the state of the art as of
+					2020(<a href="https://arxiv.org/abs/1910.02509">REMIND</a>).
+
+				<h3>CoRE50 Dataset</h3>
+				<img src="images/core50.png" style="width:70%" style="vertical-align:middle">
+				</p>
+
+				<p>
+					In this project I worked Architectural methods and rehearsal methods. Deciding on which methods to
+					choose and incooporate was the first task. I worked with GWR(Grow When Required) and its adaptation.
+					On the other hand in rehersal, I worked with Latent Replay rehersal method. There were many test
+					cases to include methods from continual learning and other CNN approaches. The finalized
+					architecture is as follows.
+				</p>
+
+				<h3>Architecture</h3>
+				<img src="images/FYP_architecture.png" style="width:70%" style="vertical-align:middle">
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="inner">
+				<!-- <section>
+					<h2>Get in touch</h2>
+					<form method="post" action="#">
+						<div class="fields">
+							<div class="field half">
+								<input type="text" name="name" id="name" placeholder="Name" />
+							</div>
+							<div class="field half">
+								<input type="email" name="email" id="email" placeholder="Email" />
+							</div>
+							<div class="field">
+								<textarea name="message" id="message" placeholder="Message"></textarea>
+							</div>
+						</div>
+						<ul class="actions">
+							<li><input type="submit" value="Send" class="primary" /></li>
+						</ul>
+					</form>
+				</section> -->
+				<section>
+					<!-- <h3>Follow</h3> -->
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/varatheepan-paramanayakam-01/"
+								class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+						<li><a href="https://github.com/Varatheepan" class="icon brands fa-github"><span
+									class="label">GitHub</span></a></li>
+					</ul>
+				</section>
+				<ul class="copyright">
+					<li>&copy; Untitled. All rights reserved</li>
+					<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</div>
+		</footer>
+
+	</div>
+
+	<!-- Scripts -->
+	<!-- <script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script> -->
+
+</body>
+
+</html>
