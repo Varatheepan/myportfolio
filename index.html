@@ -29,7 +29,7 @@
 				<li><a href="#two">Interested Fields</a></li>
 				<li><a href="#three">Work Experience</a></li>
 				<li><a href="#four">Projects</a></li>
-				<li><a href="#five">Contact</a></li>
+				<!-- <li><a href="#five">Contact</a></li> -->
 			</ul>
 		</nav>
 		<footer>
@@ -38,6 +38,8 @@
 						class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
 				<li><a href="https://github.com/Varatheepan" class="icon brands fa-github"><span
 							class="label">GitHub</span></a></li>
+				<li><a href="mailto:varatheepanp@gmail.com" class="fa fa-envelope" style="font-size:24px"><span
+							class="label"></span></a></li>
 			</ul>
 		</footer>
 	</section>
@@ -61,24 +63,38 @@
 						<!-- <p>Here I present to you myself<br />
 										Who am I, my portfolio and my carrer aspirations.</p> -->
 					</header>
-					<p>The amazing things we can
+					<!-- <p>The amazing things we can
 						do with a computer exsites me and gave me path in some tech deciplines. Here in this page, I
 						showcase the projects I did which I am proud of and to give a glance of my competence in the
-						deciplines I believe in which I can make an impact.</p>
+						deciplines I believe in which I can make an impact.</p> -->
+					<p align="justify">
+						I am pursuing a career in machine learning and currently working as a machine learning engineer
+						based in Jaffna, Sri Lanka. My interest in building solutions to problems drives me through
+						various fields of technology. During my final year in the university, I, with four fellow
+						engineering undergraduates, founded a company and worked on a hybrid agriculture project
+						incorporating the internet of things(brief description provided in 'Projects' section). With the
+						completion of in-person responsibilities in the project site, I started working as a machine
+						learning engineer in January 2022. Although our startup attempt did not meet the expectations
+						and turned out unattainable in the planned period due to the ongoing crisis in Sri Lanka, I
+						gained good technical and managerial experience. With a positive perception of the results of my
+						self-attempt, I am following my keenness for problem-solving through machine learning, and
+						currently looking for an opportunity to do higher studies in the machine learning field.
+					</p>
 				</div>
 			</section>
 
 			<!-- Two -->
 			<section id="two">
 				<div class="container">
-					<h3>What I'm Intereted In</h3>
+					<h3 style="color:#4acaa8;">What I'm Intereted In</h3>
 					<!-- <p>I am passionate in several fields </p>.</p> -->
 					<ul class="feature-icons">
-						<li class="icon solid fa-cubes">Computer Vision</li>
 						<li class="icon solid fa-cubes">Machine Learning / Deep Learning</li>
+						<li class="icon solid fa-cubes">Computer Vision</li>
+						<li class="icon solid fa-code">Algorithms</li>
 						<li class="icon solid fa-envelope">Internet of things</li>
 						<li class="icon solid fa-coffee">Embedded Electonics</li>
-						<!-- <li class="icon solid fa-code">Algorithm Development</li> -->
+
 						<!-- <li class="icon solid fa-users">Shadow clone technique</li> -->
 					</ul>
 				</div>
@@ -87,20 +103,34 @@
 			<!-- Three -->
 			<section id="three">
 				<div class="container">
-					<h3>Work Experience</h3>
+					<h3 style="color:#4acaa8;">Work Experience</h3>
 					<link rel="stylesheet" href="assets/css/tabs.css" />
 					<div class="tab">
-						<button class="tablinks" onclick="openCity(event, 'Intern')">SenzMate - Internship</button>
+						<button id="intern_button" class="tablinks" onclick="openCity(event, 'Intern')">SenzMate -
+							Internship</button>
+						<script>
+							document.addEventListener("DOMContentLoaded", function (event) {
+								document.getElementById("intern_button").click();
+							});
+						</script>
 						<button class="tablinks" onclick="openCity(event, 'MLEngineer')">SenzMate</button>
 					</div>
 					<div id="Intern" class="tabcontent">
 						<h4>Research Engineer Intern</h4>
 						<h5>From June 2019 - Novermber 2019</h5>
 						<ul>
-							<li>Stm32 based mmbedded firmware development for a company product.</li>
+							<!-- <li>Stm32 based mmbedded firmware development for a company product.</li>
 							<li>Developed an OTA update algorithm using HTTP protocol for a STM32 microcontroller
 								without builin OTP support. </li>
-							<li>Harware problem debugging for an existing product.</li>
+							<li>Harware problem debugging for an existing product.</li> -->
+							<li>Developed an Embedded firmware for a company product which was built using a STM32
+								series microcontroller and accompanying peripheral devices IMU, GSM, Bluetooth and GPS.
+							</li>
+							<li>Developed an OTA update algorithm for the STM32 based microcontroller using HTTP
+								protocol. In this implementation the STM32 microcontroller used as master and a STM8
+								series microcontroller used to update firmware.</li>
+							<li>Debugged a Hardware issue through the use of oscilloscope based analysis and given a fix
+								to the next version.</li>
 						</ul>
 					</div>
 
@@ -110,17 +140,35 @@
 						<ul>
 							<li>Digital Display OCR</li>
 							<ul>
-								<li>Reading values in induatrail machinery displays</li>
+								<!-- <li>Reading values in industrail machinery displays</li>
 								<li>Worked with Yolo and PaddleOCR - custom training</li>
-								<li>Running as a flask based API</li>
+								<li>Running as a flask based API</li> -->
+								<li>Working on an OCR based display value reading project(DDOCR) with the responsibility
+									as a Product owner.</li>
+								<li>Designed the machine learning model pipeline of DDOCR with the inclusion of Paddle
+									based models and YOLO-V4.</li>
+								<li>Implemented a restful api for the DDOCR application with the use of onnx models,
+									flask, gunicorn and nginx.</li>
 							</ul>
 							<li>Licence plate based billing in gas stations</li>
 							<ul>
-								<li>Works in improving the existing product</li>
+								<!-- <li>Works in improving the existing product</li>
 								<li>Worked in OpenCV based computer vison applications and pytorch based fewshot learning approch</li>
-								<li>Experience in Docker based implementation and Python(OOP, Multithreading)</li>
+								<li>Experience in Docker based implementation and Python(OOP, Multithreading)</li> -->
+
+								<li>Working on computer vision based real-time license plate recognition(LPR) applied in
+									automated gas station billing.</li>
+								<li>Fixed multiple algorithmic and coding bugs from existing work. Bug fixing is one of
+									the major responsibility.</li>
+								<li>Improved performance by multi-threading, increased the processable regions of camera
+									(from two to multiple) by organizing the code base as object oriented and worked
+									with functional update for LPR in moving vehicle scenarios.</li>
+								<li>Added a few-shot learning based classification model for a license plate
+									classification task.</li>
+								<li>Managing the update packaging and functional verification of LPR with the
+									collaboration of client developer team.</li>
 							</ul>
-							
+
 						</ul>
 					</div>
 
@@ -135,7 +183,7 @@
 			<!-- Four -->
 			<section id="four">
 				<div class="container">
-					<h3>Some Projects I did</h3>
+					<h3 style="color:#4acaa8;">Some Interesting Work</h3>
 					<!-- <p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non.
 						Adipiscing cubilia elementum integer. Integer eu ante ornare amet commetus.</p> -->
 					<div class="features">
@@ -146,6 +194,7 @@
 								<p>This project is an end to end research done for my final year(group) project. This
 									extends existing works in Continual learning paradigm to bring a meaning full
 									architecture that perform close to state-of-the-art.</p>
+								<a href="FYP.html">See more...</a>
 							</div>
 						</article>
 						<article>
@@ -155,10 +204,11 @@
 								<p>A team of Engineers decided to do agritech research and as a result, we found a
 									company called ElectroLeaf, and did work in vertical farming and IoT controlled
 									Automation.</p>
+								<a href="ELF.html">See more...</a>
 							</div>
 						</article>
 						<article>
-							<a href="#" class="image"><img src="images/display1.jpg" alt="" /></a>
+							<a class="image"><img src="images/display1.jpg" alt="" /></a>
 							<div class="inner">
 								<h4>Vision based digital display text recognition</h4>
 								<p>Data manipulation and mis-entry can be a threat in many industrial

@@ -147,12 +147,12 @@ input, select, textarea {
 		}
 
 	h2 {
-		font-size: 1.5em;
+		font-size: 2em;
 		line-height: 1.5em;
 	}
 
 	h3 {
-		font-size: 1.5em;
+		font-size: 1.75em;
 		line-height: 1.5em;
 	}
 
@@ -2402,7 +2402,7 @@ input, select, textarea {
 			}
 
 			ul.feature-icons li:before {
-				background: #4acaa8;      /* #4acaa8 */
+				background: #4acaa8;
 				border-radius: 100%;
 				color: #ffffff;
 				display: block;
@@ -2700,7 +2700,7 @@ input, select, textarea {
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		background: #090a30; /*#001152; default: 4acaa8  030c1e*/
+		background: #4acaa8; /*#001152;    030c1e*/
 		color: #7a75ad;   /*363352*/
 		height: 100%;
 		overflow-y: auto;
@@ -2716,7 +2716,7 @@ input, select, textarea {
 		}
 
 			#header h1 a, #header h2 a, #header h3 a, #header h4 a, #header h5 a, #header h6 a {
-				color: #4acaa8;
+				color: #ffffff;
 			}
 
 		#header header p {
