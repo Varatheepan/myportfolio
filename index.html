@@ -106,14 +106,22 @@
 					<h3 style="color:#4acaa8;">Work Experience</h3>
 					<link rel="stylesheet" href="assets/css/tabs.css" />
 					<div class="tab">
+						<button id="ML_eng_button" class="tablinks"
+							onclick="openCity(event, 'MLEngineer')">SenzMate</button>
+						<script>
+							document.addEventListener("DOMContentLoaded", function (event) {
+								document.getElementById("ML_eng_button").click();
+							});
+						</script>
+
 						<button id="intern_button" class="tablinks" onclick="openCity(event, 'Intern')">SenzMate -
 							Internship</button>
-						<script>
+						<!-- <script>
 							document.addEventListener("DOMContentLoaded", function (event) {
 								document.getElementById("intern_button").click();
 							});
-						</script>
-						<button class="tablinks" onclick="openCity(event, 'MLEngineer')">SenzMate</button>
+						</script> -->
+
 					</div>
 					<div id="Intern" class="tabcontent">
 						<h4>Research Engineer Intern</h4>
@@ -129,7 +137,7 @@
 							<li>Developed an OTA update algorithm for the STM32 based microcontroller using HTTP
 								protocol. In this implementation the STM32 microcontroller used as master and a STM8
 								series microcontroller used to update firmware.</li>
-							<li>Debugged a Hardware issue through the use of oscilloscope based analysis and given a fix
+							<li>Debugged a Hardware issue through the use of oscilloscope based analysis and gave a fix
 								to the next version.</li>
 						</ul>
 					</div>
@@ -182,8 +190,9 @@
 
 			<!-- Four -->
 			<section id="four">
+
 				<div class="container">
-					<h3 style="color:#4acaa8;">Some Interesting Work</h3>
+					<h3 style="color:#4acaa8;">Research Work</h3>
 					<!-- <p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non.
 						Adipiscing cubilia elementum integer. Integer eu ante ornare amet commetus.</p> -->
 					<div class="features">
@@ -197,17 +206,17 @@
 								<a href="FYP.html">See more...</a>
 							</div>
 						</article>
-						<article>
+						<!-- <article>
 							<a href="ELF.html" class="image"><img src="images/GH.jpg" alt="" /></a>
 							<div class="inner">
 								<h4>Green house Automation with Iot</h4>
-								<p>A team of Engineers decided to do agritech research and as a result, we found a
+								<p>A team of Engineers decided to do agritech research and as a result, found a
 									company called ElectroLeaf, and did work in vertical farming and IoT controlled
 									Automation.</p>
 								<a href="ELF.html">See more...</a>
 							</div>
-						</article>
-						<article>
+						</article> -->
+						<!-- <article>
 							<a class="image"><img src="images/display1.jpg" alt="" /></a>
 							<div class="inner">
 								<h4>Vision based digital display text recognition</h4>
@@ -216,10 +225,102 @@
 									taken photograph of a machine display is applied with certain text recognition
 									algorithms.</p>
 							</div>
-						</article>
+						</article> -->
 					</div>
 				</div>
 			</section>
+
+			<!-- <section id ="features">	 -->
+			<!-- Other projects -->
+			<!-- <link rel="stylesheet" href="assets/css/other_project_list.css" /> -->
+
+			<div class="container">
+
+				<header>
+					<h2 style="color:#4acaa8;">Other Interesting work</h2>
+				</header>
+				<div class="row">
+					<!-- Electroleaf -->
+					<div class="col-4 col-6-medium col-12-small">
+
+						<section>
+							<a href='ELF.html'
+								class="image featured"><img src="images/GH.jpg" alt="" width="200" height="200" /></a>
+							<header>
+								<h4>Greenhouse Automation with IOT</h4>
+							</header>
+							<p align="justify">
+								A team of Engineers who are interested in agricultural innovations, decided to do agri-tech research and as a result, founded a company called ElectroLeaf, and did work in vertical farming and IoT controlled Automation.
+								<!-- <a href="ELF.html">See more...</a> -->
+							</p>
+							<a href="ELF.html">See more...</a>
+						</section>
+
+					</div>
+
+					<!-- Robotics -->
+					<div class="col-4 col-6-medium col-12-small">
+
+						<section>
+							<a class="image featured"><img src="images/coin_robot.jpg" alt="" width="200"
+									height="200" /></a>
+							<header>
+								<h4>Coin Collecting Robot</h4>
+							</header>
+							<p align="justify">
+								This robot desined to follow lines, collect coins placed in braches of the main line and
+								unfold a bridge to go over that. My part of this group project was to design a robot
+								arm. I designed an assemblable arm using Solidworks and worked in arduino based
+								programming for the movements of the arm. This employed servo motors and electro
+								magnets.
+								<a href='https://drive.google.com/file/d/19u4Fn1eBLle58P-r_KUBGtNvivPHXK5r/view?usp=share_link' target="_blank">(Check out a video)</a>
+							</p>
+						</section>
+
+					</div>
+
+					<!-- Brave -->
+					<div class="col-4 col-6-medium col-12-small">
+
+						<section>
+							<a class="image featured"><img src="images/ygcs8_2.jpg" alt="" width="200"
+									height="200" /></a>
+							<header>
+								<h4>Brave</h4>
+							</header>
+							<p align="justify">
+								The intension was to design a wrist-worn device for women safety. Heart rate pattern
+								change was taken as a measure of potential threat. In such cases, predefined contacts
+								will be notified with location. Worked on this for a startup competition, and initially
+								designed an arduino based prototype which detects the heart rate beyond a threshold as a
+								threat.
+							</p>
+						</section>
+
+					</div>
+					<!-- <div class="col-4 col-6-medium col-12-small">
+
+						<section>
+							<a class="image featured"><img src="images/avatar.jpg" alt="" width="200"
+									height="200" /></a>
+							<header>
+								<h3>What's this built with?</h3>
+							</header>
+							<p><strong>Responsive Tools</strong> is a simple set of tools for building responsive
+								sites and apps. All of my templates at <a href="http://html5up.net">HTML5 UP</a> are
+								built using these tools.</p>
+						</section>
+
+					</div> -->
+
+					<!-- <div class="col-12">
+						<ul class="actions">
+							<li><a href="#" class="button icon solid fa-file">Tell Me More</a></li>
+						</ul>
+					</div> -->
+				</div>
+			</div>
+			<!-- </section> -->
 
 			<!-- Five -->
 			<!-- <section id="five">
